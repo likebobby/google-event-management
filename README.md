@@ -22,18 +22,21 @@ This repository contain the Apps Scripts that is used to send the correct e-mail
 ## Getting Started
 
 Copy spreadsheets (includes Forms and Scripts)
+Event Registration
+Event Unregistration
+Check Queue Position
 
 ### Creating an event
 
 - Open the Event Registration spreadsheet
 - Go to Configuration sheet
 - Set Max Attendees, cell B1, to the max number of attendees that you're event can hold
-- Change Unregistration Form URL to what yours is
+- Change Unregistration Form URL, cell B2, to what yours is
 - Change templates under sheet Templates (OPTIONAL)
 
 - Open the Event Unregistration spreadsheet
 - Go to Configuration sheet
-- Set the Registration Spreadsheet Id, cell B1, to the id of your Event Registration spreadsheet. 
+- Set the Registration Spreadsheet Id, cell B1, to the id of your Event Registration spreadsheet.
 
 ### Common for all 3 spreadsheets
 - In the spreadsheet menu: choose Form -> Edit Form (OPTIONAL)
@@ -41,4 +44,4 @@ Copy spreadsheets (includes Forms and Scripts)
 - Under More Actions -> Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
 - Go Tools -> Script Editor (it opens) -> Triggers -> Current script's triggers -> Add a new trigger
 - Run: onFormSubmit Events: From spreadsheet -> On form submit
-- You can also set notifications on error, if developing it's recommended to set it to "immediately"                
+- You can also set notifications on error, if developing it's recommended to set it to "immediately" (OPTIONAL)
