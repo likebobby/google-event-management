@@ -1,5 +1,4 @@
-﻿
-# Google Apps Event Management
+﻿# Google Event Management
 
 This project aims to create simple event management with Google Apps. It uses Google Sites, Forms, Spreadsheets and Apps script to implement basic event management features as:
 
@@ -13,7 +12,7 @@ This project aims to create simple event management with Google Apps. It uses Go
 
 ## Examples
 
-Examples spreadsheets can be found here.
+Example spreadsheets can be found here.
 TODO Add links to examples
 
 ## Repo
