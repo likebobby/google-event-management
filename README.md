@@ -35,7 +35,7 @@ Copy spreadsheets (includes Forms and Scripts)
 - Go to Configuration sheet
 - Set the Registration Spreadsheet Id, cell B1, to the id of your Event Registration spreadsheet. 
 
-#### Common for all 3 spreadsheets
+### Common for all 3 spreadsheets
 - In the spreadsheet menu: choose Form -> Edit Form (OPTIONAL)
 - Change the title (OPTIONAL)
 - Under More Actions -> Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
