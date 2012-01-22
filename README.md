@@ -22,9 +22,9 @@ This repository contain the Apps Scripts that is used to send the correct e-mail
 ## Getting Started
 
 Copy spreadsheets (includes Forms and Scripts)
-Event Registration
-Event Unregistration
-Check Queue Position
+- Event Registration
+- Event Unregistration
+- Check Queue Position
 
 ### Creating an event
 
