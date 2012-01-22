@@ -25,11 +25,11 @@ Copy spreadsheets (includes Forms and Scripts)
 
 ### Creating an event
 
-Open the spreadsheet Event Registration
-Go to sheet Configuration
-Set Max Attendees, cell B1, to the max number of attendees that you're event can hold
-Change Unregistration Form URL to what yours is
-Change templates under sheet Templates (OPTIONAL)
-In the spreadsheet menu: choose Form - Edit Form (OPTIONAL)
-Change the title (OPTIONAL)
-Under More Actions - Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
+- Open the spreadsheet Event Registration
+- Go to sheet Configuration
+- Set Max Attendees, cell B1, to the max number of attendees that you're event can hold
+- Change Unregistration Form URL to what yours is
+- Change templates under sheet Templates (OPTIONAL)
+- In the spreadsheet menu: choose Form - Edit Form (OPTIONAL)
+-- Change the title (OPTIONAL)
+-- Under More Actions - Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
