@@ -25,11 +25,20 @@ Copy spreadsheets (includes Forms and Scripts)
 
 ### Creating an event
 
-- Open the spreadsheet Event Registration
-- Go to sheet Configuration
+- Open the Event Registration spreadsheet
+- Go to Configuration sheet
 - Set Max Attendees, cell B1, to the max number of attendees that you're event can hold
 - Change Unregistration Form URL to what yours is
 - Change templates under sheet Templates (OPTIONAL)
-- In the spreadsheet menu: choose Form - Edit Form (OPTIONAL)
--- Change the title (OPTIONAL)
--- Under More Actions - Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
+
+- Open the Event Unregistration spreadsheet
+- Go to Configuration sheet
+- Set the Registration Spreadsheet Id, cell B1, to the id of your Event Registration spreadsheet. 
+
+#### Common for all 3 spreadsheets
+- In the spreadsheet menu: choose Form -> Edit Form (OPTIONAL)
+- Change the title (OPTIONAL)
+- Under More Actions -> Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
+- Go Tools -> Script Editor (it opens) -> Triggers -> Current script's triggers -> Add a new trigger
+- Run: onFormSubmit Events: From spreadsheet -> On form submit
+- You can also set notifications on error, if developing it's recommended to set it to "immediately"                
