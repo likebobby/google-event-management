@@ -1,7 +1,6 @@
-
 # Google Event Management
 
-This project aims to create simple event management with Google Apps. It uses Google Sites, Forms, Spreadsheets and Apps script to implement basic event management features as:
+This project aims to create a simple event management solution with Google Apps. It uses Google Sites, Forms, Spreadsheets and Apps Script to implement basic event management features as:
 
 - Creating a registration form
 - Send registration confirmation e-mails
@@ -19,3 +18,18 @@ TODO Add links to examples
 ## Repo
 
 This repository contain the Apps Scripts that is used to send the correct e-mails for different scenarios.
+
+## Getting Started
+
+Copy spreadsheets (includes Forms and Scripts)
+
+### Creating an event
+
+Open the spreadsheet Event Registration
+Go to sheet Configuration
+Set Max Attendees, cell B1, to the max number of attendees that you're event can hold
+Change Unregistration Form URL to what yours is
+Change templates under sheet Templates (OPTIONAL)
+In the spreadsheet menu: choose Form - Edit Form (OPTIONAL)
+Change the title (OPTIONAL)
+Under More Actions - Edit Confirmation you can change what the user will see after the form is submitted (OPTIONAL)
