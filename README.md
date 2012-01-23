@@ -12,9 +12,15 @@ This project aims to create a simple event management solution with Google Apps.
 
 ## Examples
 
-Example spreadsheets can be found here.
-Example google site can be found here. (can we do this?)
-TODO Add links to examples
+Read the getting started guide to read more detailed instructions on how to setup your own event system.
+
+Example spreadsheets with forms can be found on the following URLs. In order to use them, Save a copy for each.
+
+-[Registreation Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdERYRWRKQTVpS1pndkJzc041NVhNVXc)
+-[Unregistration Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHREcVFYN3BLREdzNVJHbmdUMTBZZ0E)
+-[Chech Queue Position Exanoke](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHdVM21OUE9PdVVPRW55d0Z2b213S0E)
+
+Example google site can be found [here](https://sites.google.com/site/eventreg2012/). It cannot be copied. You have to set up your own for now.
 
 ## Repo
 
@@ -23,6 +29,7 @@ This repository contain the Apps Scripts that is used to send the correct e-mail
 ## Getting Started
 
 Copy google site (includes Scripts) (OPTIONAL)
+
 - Create 3 pages and put one of the three forms in each page
 - Go More -> Manage Site -> Apps Scripts -> Choose "Event Management"
 - Go Tools -> Script Editor (it opens) -> Triggers -> Current script's trigger -> Add a new trigger
