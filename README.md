@@ -16,9 +16,9 @@ Read the getting started guide to read more detailed instructions on how to setu
 
 Example spreadsheets with forms can be found on the following URLs. In order to use them, Save a copy for each.
 
--[Registreation Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdERYRWRKQTVpS1pndkJzc041NVhNVXc)
--[Unregistration Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHREcVFYN3BLREdzNVJHbmdUMTBZZ0E)
--[Chech Queue Position Exanoke](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHdVM21OUE9PdVVPRW55d0Z2b213S0E)
+- [Registreation Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdERYRWRKQTVpS1pndkJzc041NVhNVXc)
+- [Unregistration Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHREcVFYN3BLREdzNVJHbmdUMTBZZ0E)
+- [Check Queue Position Example](https://docs.google.com/spreadsheet/ccc?key=0ArnGaROyFoZMdHdVM21OUE9PdVVPRW55d0Z2b213S0E)
 
 Example google site can be found [here](https://sites.google.com/site/eventreg2012/). It cannot be copied. You have to set up your own for now.
 
