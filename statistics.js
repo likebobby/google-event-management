@@ -11,8 +11,7 @@ function showRegistrationDataOnSite() {
   var numberOfRegistered = statsSheet.getRange("B1").getValue();
   var numberInQueue = statsSheet.getRange("B2").getValue();
   
-  // Create registration data string
-  var activePage = SitesApp.getActivePage();
+  // Create registration data string  
   var titleText = "";
   if (maxAttendees == numberOfRegistered) {
     titleText = "Registration is full. There are " + numberInQueue + " in queue.";
@@ -21,7 +20,8 @@ function showRegistrationDataOnSite() {
     titleText = "There are " + numberOfRegistered + "/" + maxAttendees + " registered.";
   }
   
+  var homepage = SitesApp.getPageByUrl("https://sites.google.com/site/eventreg2012/home");  
   // Had to set the title instead of the body because setHtmlContent filters out gadgets
   // incorrectly (http://code.google.com/p/google-apps-script-issues/issues/detail?id=572)
-  activePage.setTitle("Register - (" + titleText + ")");
+  homepage.setTitle("Home - (" + titleText + ")");
 }
