@@ -26,8 +26,13 @@ function onFormSubmit(e) {
     if (regCode == registrationCode) {
       regSheet.getRange(i, queuePosColumnPos).setValue(queuePos);
       rowRange = regSheet.getRange(i, 1, 1, queuePosColumnPos);
-      //Send queue status e-mail
-      sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A6"), templateSheet.getRange("B6"), true, configSheet);
+      if(status == "queued"){
+         //Send queue status e-mail
+         sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A6"), templateSheet.getRange("B6"), true, configSheet);
+      } else if (status == "unregistered"){
+          //Send unregistered info mail.
+         sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A8"), templateSheet.getRange("B8"), true, configSheet);
+      }
       break;
     }
     i++;
