@@ -1,3 +1,6 @@
+var regCodeColumnPos=6;
+var statusColumnPos=7;
+
 function onFormSubmit(e) {
   var timestamp = e.values[0];
   var name = e.values[1];
@@ -11,22 +14,22 @@ function onFormSubmit(e) {
   
   //Add the reg code to sheet
   var registrationCode = guidGenerator();
-  regSheet.getRange(lastRow, 4).setValue(registrationCode);
+  regSheet.getRange(lastRow, regCodeColumnPos).setValue(registrationCode);
   
   var status = "registered";
-  var rowRange = regSheet.getRange(lastRow, 1, 1, 4);
+  var rowRange = regSheet.getRange(lastRow, 1, 1, regCodeColumnPos);
   
   if (isEventFull(regSpreadsheet)) {
     status = "queued";
     //Send waiting list e-mail
-    sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A3"), templateSheet.getRange("B3"));
+    sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A3"), templateSheet.getRange("B3"), true, configSheet);
   }
   else {
     //Send register e-mail
-    sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A2"), templateSheet.getRange("B2"));
+    sendEmailWithRowData(regSheet, rowRange, templateSheet.getRange("A2"), templateSheet.getRange("B2"), true, configSheet);
   }
   
-  regSheet.getRange(lastRow, 5).setValue(status);
+  regSheet.getRange(lastRow, statusColumnPos).setValue(status);
 }
 
 function isEventFull(regSpreadsheet) {
@@ -49,7 +52,7 @@ function countRegistered(regSheet) {
   var numberOfRegistered = 0;
   var i=2;
   while (i <= regSheet.getLastRow()) {
-    var status = regSheet.getRange(i, 5).getValue();
+    var status = regSheet.getRange(i, statusColumnPos).getValue();
     if (status == "registered") {
       numberOfRegistered++;
     }
@@ -62,7 +65,7 @@ function countQueued(regSheet) {
   var numberOfQueued = 0;
   var i=2;
   while (i <= regSheet.getLastRow()) {
-    var status = regSheet.getRange(i, 5).getValue();
+    var status = regSheet.getRange(i, statusColumnPos).getValue();
     if (status == "queued") {
       numberOfQueued++;
     }
