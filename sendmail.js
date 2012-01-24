@@ -1,7 +1,26 @@
-function sendEmailWithRowData(dataSheet, dataRange, templateRange, subjectRange) {
+// Sends mail to registree based on its row data. 
+// Arguments
+//   - dataSheet: the sheet with registree data
+//   - dataRange: the range for the row od data to send
+//   - templateRange: the range (cell) for the e-mail body template
+//   - subjectRange: the range (cell) for the e-mail subject template
+//   - appendEvenInfo: (optional) if event name and date should be appended to the e-mail subject and body
+//   - cofigSheet: the sheet with configuration data. Used for retreiving event info if appendEventInfo is true
+function sendEmailWithRowData(dataSheet, dataRange, templateRange, subjectRange, appendEventInfo, configSheet) {
   Logger.log("Sending mail...");
   var emailTemplate = templateRange.getValue();
   var emailSubject = subjectRange.getValue();
+  if(appendEventInfo){
+    
+    emailSubject += " - " + configSheet.getRange("B2").getValue();
+    
+    var dateFormat = "HH:mm Z yyyy-MM-dd";
+
+    emailTemplate += "\n\nEvents starts: " 
+      + Utilities.formatDate(new Date(configSheet.getRange("B3").getValue()), "CET", dateFormat)
+      +"\nEvent ends: " 
+      + Utilities.formatDate(new Date(configSheet.getRange("B4").getValue()), "CET", dateFormat);
+  }
   Logger.log("Subject: " + emailSubject);
 
   //Mail code modified from http://code.google.com/googleapps/appsscript/articles/mail_merge.html
