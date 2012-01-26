@@ -28,7 +28,7 @@ This repository contain the Apps Scripts that is used to send the correct e-mail
 
 ## Getting Started
 
-Copy google site (includes Scripts) (OPTIONAL)
+Create a google site for the event.
 
 - Create 3 pages and put one of the three forms in each page
 - Go More -> Manage Site -> Apps Scripts -> Choose "Event Management"
