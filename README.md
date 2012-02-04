@@ -31,7 +31,8 @@ This repository contain the Apps Scripts that is used to send the correct e-mail
 Create a google site for the event.
 
 - Create 3 pages and put one of the three forms in each page
-- Go More -> Manage Site -> Apps Scripts -> Choose "Event Management"
+- Go More -> Manage Site -> Apps Scripts -> add new script
+- Name the new script "Event Management" and copy in the source code from the file 'statistics.js', change the spreadsheet id to your copy of [spreadsheet example]
 - Go Tools -> Script Editor (it opens) -> Triggers -> Current script's trigger -> Add a new trigger
 - Change regSpreadsheet id to the id of the Event Registration you created (copied from the original one)
 - Run: showRegistrationDataOnSite, Events: Time-driven, Minutes-timer, Every minute (smallest possible as of today)
