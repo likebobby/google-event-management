@@ -10,6 +10,11 @@ This project aims to create a simple event management solution with Google Apps.
 - Showing event booking status on a Google Sites page.
 - Retrieve your queue position.
 
+## How it works
+
+You create three spreadsheets (or copy them from the locations below) that contains most of the logic for the event registration system.
+You then create three pages on your site, where you insert the form of each spreadsheet into each page. The pages will then reflect the state of queues, places left, et.c.
+
 ## Examples
 
 Read the getting started guide to read more detailed instructions on how to setup your own event system.
